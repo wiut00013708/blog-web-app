@@ -2,16 +2,19 @@ doctype html
 html(lang="en")
     head
         title BlogApp
-        link(rel="stylesheet", href="styles.css")
+        link(rel='stylesheet', href='/static/styles.css')
     body 
         .heading
-            h3 BLOGapp
+            h3 BLOGwebAPP
 
 
             nav.navigation
                     a(href='/') HOME
-                    a(href='/create') NEW POST
+                    a(href='/create') NEW POST 
         
         block content 
-
+ 
+        footer.footer  
+            p DISCLAIMER: This web application was created to fulfill Web Technology module's requirements <br> and does not represent an actual company or service.
+        
         

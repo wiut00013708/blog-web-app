@@ -2,18 +2,13 @@ extends layout.pug
 
 block content 
     section#blog
-        if published   
-            h2 Post Is Published Successfully 
-
         .posts-container
             if posts 
                 each post in posts
-                    .post-box
-                        .text
-                            a.title(href=`/${ post.id }`)= post.title  
-                            p #{post.content}    
-                            a(href=`/${ post.id }`) Read More  
-                            
+                    .text
+                        a.title(href=`/${ post.id }`)= post.title  
+                        p #{post.content}    
+                        a.button(href=`/${ post.id }`) Read More  
         
             //- .post-box
             //-     .text

@@ -2,11 +2,12 @@ extends layout.pug
 
 block content 
     section#blog
-        h1.post-title #{ post.title } 
-        p.post-content #{ post.content }
-        .edit-delete 
-            a.edit(href=`/${ post.id }/edit`) Edit Post  
-            a.delete(href=`/${ post.id }/delete`) Delete Post 
-            //- creating this part which is delete and edit buttons
+        .single-post
+            h1.post-title #{ post.title } 
+            p.post-content #{ post.content }
+            .edit-delete 
+                a.edit(href=`/${ post.id }/edit`) Edit Post  
+                a.delete(href=`/${ post.id }/delete`) Delete Post 
+                //- creating this part which is delete and edit buttons
 
         

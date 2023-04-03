@@ -1,0 +1,25 @@
+extends layout.pug 
+
+block content
+    .section 
+        
+        form.form(action="/edit", method='POST')
+            if titleError 
+                p.error Title cannot be empty 
+            if contentError 
+                p.error Content cannot be empty 
+            if success 
+                p.success Post is created successfully
+            label.label Post Title 
+            input.input(type="text", name="edittitle")  
+            
+            label.label Post Content   
+            textarea.input(name="editcontent", cols="30", rows="10") 
+
+            button.input.btn Publish Post  
+
+            .single-post
+            h1.post-title #{ post.title } 
+            p.post-content #{ post.content }
+
+            

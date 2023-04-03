@@ -10,21 +10,13 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
-h2{
-    text-align: center;
-    font-size: larger;
-    text-decoration: underline;
-    color: #001db0;
-}
 
 body{
     margin: 0px;
     padding:0px;
     font-family: Gilroy;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 #blog{
@@ -33,6 +25,7 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    
 }
 
 .heading{
@@ -44,20 +37,21 @@ body{
 
 .heading .navigation a{
     margin-left: 1rem;
+    color: #001db0;
 }
 
 .heading .navigation a:hover{
-    color: coral;
+    color: #2030e0;
     transition: all ease-in-out 0.2s;
 }
 
 .heading h3 {
     font-size: 2rem;
-    color: #2030e0;
+    color: #001db0;
     padding: 0.5rem;
     font-weight: 500;
-    border-bottom: 4px solid #2030e0;
-    border-top: 4px solid #2030e0;
+    border-bottom: 4px solid #001db0;
+    border-top: 4px solid #001db0;
 }
 
 .posts-container{
@@ -68,32 +62,19 @@ body{
     flex-wrap: wrap;
 }
 
-.post-box{
+
+.text{
     width: 350px;
     border: 1px solid #ececec;
     margin: 20px;
-}
-
-.blog-img{
-    width: 100%;
-    height: auto;
-}
-
-.blog-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.text{
     padding: 30px;
     display: flex;
     flex-direction: column;
 }
 
 .text p{
-    color: #718ead;
+    color: #2030e0;
+    opacity: 0.6;
     font-size: 0.9rem;
     display: -webkit-box;
     line-height: 1.5rem;
@@ -103,12 +84,6 @@ body{
     -webkit-box-orient: vertical;
 }
 
-.text span {
-    color: #2b96d4;
-    font-size: 0.9rem;
-    padding: 0.3rem;
-    border-radius: 0.2rem;
-}
 
 .text .title{
     font-size: 1.5rem;
@@ -117,8 +92,26 @@ body{
     
 }
 
+.text .title:hover{
+    color: #2030e0;
+    transition: all ease 0.3s;
+}
+
+.button{
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 10px;
+    color: #fff;
+    background: #001db0;
+}
+
+.button:hover{
+    background: #2030e0;
+    transition: all ease 0.3s;
+}
+
 button{
-    background-color: blue;
+    background-color: #001db0;
     border: none;
     color: white;
     font-size: 1.3rem;
@@ -126,30 +119,14 @@ button{
     margin: 1rem;
     display: inline;
 }
-.text .title:hover{
-    color: #0091ff;
-    transition: all ease 0.3s;
-}
 
-.text p{
-    color: #718ead;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    margin: 20px 0px;
-}
 
-.text a{
-    color: #590069;
-}
 
-.text a:hover{
-    color: #2030e0;
-    transition: all ease 0.3s;
-}
 
 .form{
     margin: 5rem;
     width: 50%;
+    color: #001db0
 }
 
 .input {
@@ -157,23 +134,21 @@ button{
     width: 100%;
     font-size: 1.1rem;
     font-family: inherit;
-    margin-bottom: 1.4rem;
-    margin-top: 0.5rem;
+    margin: 1.4rem 0;
     padding: 0.5rem;
-    border-radius: 0.2rem;
     border: 1px dashed #001db0;
     resize: vertical;
     font-style: italic;
 }
 
-.label{
-    color: #2030e0;
-    margin-bottom: 1.1rem;
-}
 
 .btn{
-    margin: 2rem 0rem;
     width: fit-content;
+}
+
+.btn:hover{
+    border-color: #2030e0;
+    background: #2030e0;
 }
 
 .error{
@@ -201,12 +176,52 @@ button{
     color: inherit;
 }
 
-.edit-delete{
-    display: flex;
-    justify-content: space-evenly;
+.edit,
+.delete{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background: #001db0;
+}
 
-} 
+.edit:hover,
+.delete:hover {
+    background: #2030e0;
+}
 
+.single-post{
+    max-width: 80%;
+}
+
+.post-title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #2030e0;
+    color:#001db0;
+
+}
+
+.post-content{
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #2030e0;
+}
+
+/* FOOTER STYLING */
+
+.footer p{
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #2030e0;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
 
 
 
