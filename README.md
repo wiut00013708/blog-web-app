@@ -28,6 +28,6 @@ node app
 
 ### Web application repository on github
 - [link to github repository](https://github.com/wiut00013708/blog-web-app.git)
-- [link to the application on glitch]()
+- [link to the application on glitch](https://outstanding-enormous-snagglefoot.glitch.me)
 
 
