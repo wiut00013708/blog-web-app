@@ -1,0 +1,22 @@
+extends layout.pug 
+
+block content 
+    section#blog
+        if published   
+            h2 Post Is Published Successfully 
+
+        .posts-container
+            if posts 
+                each post in posts
+                    .post-box
+                        .text
+                            a.title(href=`/${ post.id }`)= post.title  
+                            p #{post.content}    
+                            a(href=`/${ post.id }`) Read More  
+                            
+        
+            //- .post-box
+            //-     .text
+            //-         a.title(href='#') This is a Random Post 3
+            //-         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla totam blanditiis illo unde quisquam, natus dignissimos, aut animi vel cumque laudantium itaque quos accusantium soluta alias! Placeat ut impedit vel?
+            //-         a(href='#') Read More

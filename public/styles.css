@@ -1,0 +1,239 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Gilroy;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+    color: #001db0;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: Gilroy;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.heading{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1rem 4rem 1rem 2rem;
+}
+
+.heading .navigation a{
+    margin-left: 1rem;
+}
+
+.heading .navigation a:hover{
+    color: coral;
+    transition: all ease-in-out 0.2s;
+}
+
+.heading h3 {
+    font-size: 2rem;
+    color: #2030e0;
+    padding: 0.5rem;
+    font-weight: 500;
+    border-bottom: 4px solid #2030e0;
+    border-top: 4px solid #2030e0;
+}
+
+.posts-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem;
+    flex-wrap: wrap;
+}
+
+.post-box{
+    width: 350px;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p{
+    color: #718ead;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    line-height: 1.5rem;
+    margin: 20px 0px;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.text span {
+    color: #2b96d4;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.text .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #001db0;
+    
+}
+
+button{
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    display: inline;
+}
+.text .title:hover{
+    color: #0091ff;
+    transition: all ease 0.3s;
+}
+
+.text p{
+    color: #718ead;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 20px 0px;
+}
+
+.text a{
+    color: #590069;
+}
+
+.text a:hover{
+    color: #2030e0;
+    transition: all ease 0.3s;
+}
+
+.form{
+    margin: 5rem;
+    width: 50%;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: inherit;
+    margin-bottom: 1.4rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px dashed #001db0;
+    resize: vertical;
+    font-style: italic;
+}
+
+.label{
+    color: #2030e0;
+    margin-bottom: 1.1rem;
+}
+
+.btn{
+    margin: 2rem 0rem;
+    width: fit-content;
+}
+
+.error{
+    padding: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid tomato;
+    font-size: 1.3rem;
+    color: red;
+}
+
+.success{
+    padding: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid rgb(50, 214, 0);
+    font-size: 1.3rem;
+    color: rgb(67, 201, 0);
+}
+
+.post{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: inherit;
+    color: inherit;
+}
+
+.edit-delete{
+    display: flex;
+    justify-content: space-evenly;
+
+} 
+
+
+
+
+
+
+
+/* ==================== DEVICE FLEXIBILITY ============================= */
+
+@media(max-width: 1250px){
+    .post-box{
+        width: 300px;
+
+    }
+}
+
+@media(max-width: 1100px){
+    .post-box{
+        width: 70%;
+    }
+}
+
+@media(max-width: 550px){
+    .post-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog{
+        padding: 20px;
+    }
+}
