@@ -22,12 +22,12 @@ node app
 
 ### Web application dependencies
 
--express.js
--pug.js
--uniqid.js
+- express.js
+- pug.js
+- uniqid.js
 
 ### Web application repository on github
--[link to github repository](https://github.com/wiut00013708/blog-web-app.git)
--[link to the application on glitch]()
+- [link to github repository](https://github.com/wiut00013708/blog-web-app.git)
+- [link to the application on glitch]()
 
 
